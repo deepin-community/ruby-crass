@@ -1,0 +1,17 @@
+Description: Fix library path
+ Change relative library path to absolute for DebCI to work
+Author: Balasankar C <balasankarc@autistici.org>
+Last-Update: 2015-01-17
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
+--- a/test/support/common.rb
++++ b/test/support/common.rb
+@@ -2,7 +2,7 @@
+ gem 'minitest'
+ require 'minitest/autorun'
+ 
+-require_relative '../../lib/crass'
++require 'crass'
+ 
+ CP = Crass::Parser
+ CT = Crass::Tokenizer

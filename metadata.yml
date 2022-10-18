@@ -1,0 +1,148 @@
+--- !ruby/object:Gem::Specification
+name: crass
+version: !ruby/object:Gem::Version
+  version: 1.0.2
+platform: ruby
+authors:
+- Ryan Grove
+autorequire: 
+bindir: bin
+cert_chain: []
+date: 2015-04-18 00:00:00.000000000 Z
+dependencies:
+- !ruby/object:Gem::Dependency
+  name: minitest
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 5.0.8
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 5.0.8
+- !ruby/object:Gem::Dependency
+  name: rake
+  requirement: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 10.1.0
+  type: :development
+  prerelease: false
+  version_requirements: !ruby/object:Gem::Requirement
+    requirements:
+    - - "~>"
+      - !ruby/object:Gem::Version
+        version: 10.1.0
+description: Crass is a pure Ruby CSS parser based on the CSS Syntax Level 3 spec.
+email:
+- ryan@wonko.com
+executables: []
+extensions: []
+extra_rdoc_files: []
+files:
+- ".gitignore"
+- ".travis.yml"
+- ".yardopts"
+- Gemfile
+- HISTORY.md
+- LICENSE
+- README.md
+- Rakefile
+- crass.gemspec
+- lib/crass.rb
+- lib/crass/parser.rb
+- lib/crass/scanner.rb
+- lib/crass/token-scanner.rb
+- lib/crass/tokenizer.rb
+- lib/crass/version.rb
+- test/css-parsing-tests/An+B.json
+- test/css-parsing-tests/LICENSE
+- test/css-parsing-tests/README.rst
+- test/css-parsing-tests/color3.json
+- test/css-parsing-tests/color3_hsl.json
+- test/css-parsing-tests/color3_keywords.json
+- test/css-parsing-tests/component_value_list.json
+- test/css-parsing-tests/declaration_list.json
+- test/css-parsing-tests/make_color3_hsl.py
+- test/css-parsing-tests/make_color3_keywords.py
+- test/css-parsing-tests/one_component_value.json
+- test/css-parsing-tests/one_declaration.json
+- test/css-parsing-tests/one_rule.json
+- test/css-parsing-tests/rule_list.json
+- test/css-parsing-tests/stylesheet.json
+- test/css-parsing-tests/stylesheet_bytes.json
+- test/shared/parse_rules.rb
+- test/support/common.rb
+- test/support/serialization/animate.css
+- test/support/serialization/bootstrap-theme.css
+- test/support/serialization/bootstrap.css
+- test/support/serialization/html5-boilerplate.css
+- test/support/serialization/misc.css
+- test/support/serialization/pure.css
+- test/test_crass.rb
+- test/test_css_parsing_tests.rb
+- test/test_parse_properties.rb
+- test/test_parse_rules.rb
+- test/test_parse_stylesheet.rb
+- test/test_serialization.rb
+homepage: https://github.com/rgrove/crass/
+licenses:
+- MIT
+metadata: {}
+post_install_message: 
+rdoc_options: []
+require_paths:
+- lib
+required_ruby_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: 1.9.2
+required_rubygems_version: !ruby/object:Gem::Requirement
+  requirements:
+  - - ">="
+    - !ruby/object:Gem::Version
+      version: '0'
+requirements: []
+rubyforge_project: 
+rubygems_version: 2.4.5
+signing_key: 
+specification_version: 4
+summary: CSS parser based on the CSS Syntax Level 3 spec.
+test_files:
+- test/css-parsing-tests/An+B.json
+- test/css-parsing-tests/LICENSE
+- test/css-parsing-tests/README.rst
+- test/css-parsing-tests/color3.json
+- test/css-parsing-tests/color3_hsl.json
+- test/css-parsing-tests/color3_keywords.json
+- test/css-parsing-tests/component_value_list.json
+- test/css-parsing-tests/declaration_list.json
+- test/css-parsing-tests/make_color3_hsl.py
+- test/css-parsing-tests/make_color3_keywords.py
+- test/css-parsing-tests/one_component_value.json
+- test/css-parsing-tests/one_declaration.json
+- test/css-parsing-tests/one_rule.json
+- test/css-parsing-tests/rule_list.json
+- test/css-parsing-tests/stylesheet.json
+- test/css-parsing-tests/stylesheet_bytes.json
+- test/shared/parse_rules.rb
+- test/support/common.rb
+- test/support/serialization/animate.css
+- test/support/serialization/bootstrap-theme.css
+- test/support/serialization/bootstrap.css
+- test/support/serialization/html5-boilerplate.css
+- test/support/serialization/misc.css
+- test/support/serialization/pure.css
+- test/test_crass.rb
+- test/test_css_parsing_tests.rb
+- test/test_parse_properties.rb
+- test/test_parse_rules.rb
+- test/test_parse_stylesheet.rb
+- test/test_serialization.rb
+has_rdoc: 

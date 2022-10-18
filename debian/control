@@ -1,0 +1,24 @@
+Source: ruby-crass
+Section: ruby
+Priority: optional
+Maintainer: Debian Ruby Extras Maintainers <pkg-ruby-extras-maintainers@lists.alioth.debian.org>
+Uploaders: Balasankar C <balasankarc@autistici.org>
+Build-Depends: debhelper (>= 7.0.50~), gem2deb, locales, rake, ruby-minitest
+Build-Conflicts: locales-all
+Standards-Version: 3.9.6
+Vcs-Git: git://anonscm.debian.org/pkg-ruby-extras/ruby-crass.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-ruby-extras/ruby-crass.git;a=summary
+Homepage: https://github.com/rgrove/crass/
+Testsuite: autopkgtest-pkg-ruby
+XS-Ruby-Versions: all
+
+Package: ruby-crass
+Architecture: all
+XB-Ruby-Versions: ${ruby:Versions}
+Depends: ruby | ruby-interpreter, ${misc:Depends}, ${shlibs:Depends}
+Description: CSS parser based on the CSS Syntax Level 3 draft
+ Crass is a pure Ruby CSS parser based on the CSS Syntax Level 3 draft
+ specification. Tokenizes and parses CSS according to the rules defined
+ in the 2013 draft of the CSS Syntax Level 3 specification.Extremely
+ tolerant of broken or invalid CSS. If a browser can handle it,
+ Crass should be able to handle it too.
